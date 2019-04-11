@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulário de Cadastro</title>
+	<meta charset="utf-8">
+
+</head>
+<body>
+	<h2>Cadastro de Perfil</h2>
+	<form action="pagina.php" method="post" enctype="multipart/form-data">
+		<p>Nome Completo: <input type="text" name="nome" autofocus required="" /></p>
+	<p>CPF: 
+		<input type="text" name="cpf" size="31" maxlength="11" placeholder="Somente números"  required min="1" max="31"/></p>
+		<input type="hidden" name="MAX_FILE_SIZE" value="4194304" />
+		<input type="file" />
+		<input type="submit" value="Enviar"/>
+	<p>Perfil:
+		<textarea rows="5" cols="32" name="perfil"></textarea></p>
+	<p>Selecione os seus hobbies:
+		<input type="checkbox" name="hobbies" value="Ler"/>Ler
+		<br/>
+		<input type="checkbox" name="hobbies" value="Caminhar"/>Caminhar
+		<br/>
+		<input type="checkbox" name="hobbies" value="Fotografar"/>Fotografar
+		<br/>
+		<input type="checkbox" name="hobbies" value="Estudar" checked/>Estudar
+		<br/>
+		<input type="checkbox" name="hobbies" value="Cantar"/>Cantar</p>
+	<p>Data de Nascimento:
+		<input type="date" name="datanascimento"/>
+	</p>
+	<p>E-mail:
+		<input type="email" name="email" required/>
+	</p>
+	<p>Qual a sua idade:
+		<input type="number" name="idade" step="1" min="10" max="50" required />	
+	</p>
+	<p>
+		<input type="submit" value="Enviar dados"/>
+	</p>
+	</form>
+	
+
+</body>
+</html>
